@@ -16,7 +16,12 @@ public class TLCWoCaoClass {
     
     public func showName() {
         print("name:\(name)")
-        AF.request("")
+        AF.request("http://www.baidu.com").response(queue: DispatchQueue.main) { (response) in
+            if let data = response.data {
+                let dex = String.init(data: data, encoding: String.Encoding.utf8)
+                print(dex ?? "nil")
+            }
+        }
     }
 }
 

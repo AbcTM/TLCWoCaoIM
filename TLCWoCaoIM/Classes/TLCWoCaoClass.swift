@@ -10,11 +10,11 @@ import Foundation
 import Alamofire
 
 /// 示例class
-public class TLCWoCaoClass {
+internal class TLCWoCaoClass {
     fileprivate var name: String = ""
-    public var age: Int = 0
+    internal var age: Int = 0
     
-    public func showName() {
+    internal func showName() {
         print("name:\(name)")
         AF.request("http://www.baidu.com").response(queue: DispatchQueue.main) { (response) in
             if let data = response.data {
@@ -26,7 +26,7 @@ public class TLCWoCaoClass {
 }
 
 
-public struct Funcz {
+internal struct Funcz {
     var name: String
     var age: Int
 }

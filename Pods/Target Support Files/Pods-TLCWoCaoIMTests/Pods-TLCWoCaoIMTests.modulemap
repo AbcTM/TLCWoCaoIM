@@ -1,0 +1,6 @@
+framework module Pods_TLCWoCaoIMTests {
+  umbrella header "Pods-TLCWoCaoIMTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
